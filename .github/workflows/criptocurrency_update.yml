@@ -7,8 +7,9 @@ env:
 
 # Controls when the action will run.
 on:
-  # Trigger the workflow on push
-  push:
+ push:
+ repository_dispatch:
+   types: invocacion_desde_curl
 
 jobs:
   autoscrape:
